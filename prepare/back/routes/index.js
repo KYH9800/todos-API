@@ -6,7 +6,8 @@ const signupRouter = require('./signup');
 const loginRouter = require('./login');
 
 router.get('/', (req, res) => {
-  res.send('todo list api start!!');
+  console.log('res: ', res);
+  return res.send('Hello TODOS');
 });
 
 router.use('/todos', todosRouter);
